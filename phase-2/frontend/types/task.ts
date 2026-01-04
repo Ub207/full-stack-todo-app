@@ -8,7 +8,6 @@ export interface Task {
   status: TaskStatus;
   priority: TaskPriority;
   due_date?: string | null;
-  user_id: number;
   created_at: string;
   updated_at: string;
 }
@@ -29,7 +28,6 @@ export interface TaskCreate {
   status?: TaskStatus;
   priority?: TaskPriority;
   due_date?: string | null;
-  user_id: number;
 }
 
 export interface TaskUpdate {
@@ -38,5 +36,4 @@ export interface TaskUpdate {
   status?: TaskStatus;
   priority?: TaskPriority;
   due_date?: string | null;
-  user_id?: number;
 }
